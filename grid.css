@@ -7,6 +7,14 @@
       "header header header"
       "sidebar sidebar text"
       "footer footer footer";
+  
+    -moz-color: brown;
+    -webkit-color: brown;
+    -ms-color: brown;
+    -o-color: brown;
+    -icab-color: brown;
+    -khtml-color: brown;
+    color: brown;
   }
   
   header {

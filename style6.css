@@ -1,0 +1,15 @@
+.eee {
+    width: 4cm;
+    height: 3cm;
+    background-color: cadetblue;
+    border-radius: 15px;
+    position: fixed;
+    left: 20%;
+    top: 30%;
+    transition: transform 1s;
+  }
+  
+  .eee:hover {
+    transform: scale(2) rotate(90deg);
+  }
+  

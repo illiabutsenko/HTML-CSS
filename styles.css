@@ -61,3 +61,105 @@
       background-color: darkblue;
       text-decoration: underline;
     }
+
+
+    .ball {
+      background-color: #4caf60;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      color: blue;
+      font-size: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      left: 50%;
+      border-radius: 30%;
+      transform: translate(50px, -20px);
+      transform: translateX(25px);
+      transform: translateY(-20px);
+      transform: translateZ(50px);
+      transform: scale(1.5, 1.5);
+      transform: scaleX(1.2);
+      transform: scaleY(1.2);
+      transform: rotate(45deg);
+      transform: /*skew(20deg, 20deg)*/ rotate(45deg) /* scale(1.5)*/;
+      transition: 1s;
+    }
+    
+    .ball:hover {
+      transform: rotate(-700deg);
+    }
+    
+    @keyframes animationName {
+      0% {
+        /*початкові стилі*/
+      }
+      50% {
+        /*середні стилі*/
+      }
+      100% {
+        /*кінцеві стилі*/
+      }
+    }
+    
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    table {
+      animation-name: fadeIn;
+      animation-duration: 5s;
+    }
+    
+    .ball2 {
+      background-color: #2e0673;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: fixed;
+      left: 50%;
+      top: 20%;
+      border-radius: 50%;
+      animation-name: bounce;
+      animation-duration: 2s;
+      /* animation-iteration-count: infinite;
+      animation-direction: reverse; */
+      animation-fill-mode: forwards;
+      animation: colorChange 5s infinite;
+    }
+    
+    @keyframes bounce {
+      0%,
+      50%,
+      100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+    
+    @keyframes colorChange {
+      0% {
+        background-color: red;
+      }
+      50% {
+        background-color: blue;
+      }
+      100% {
+        background-color: green;
+      }
+    }

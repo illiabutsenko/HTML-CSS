@@ -1,0 +1,22 @@
+.fff {
+    width: 5cm;
+    height: 5cm;
+    /* border-width: 5;
+    border-color: rgb(0, 0, 0);
+    border-style: ridge; */
+    padding: 5px;
+    background-color: darkcyan;
+    /* animation-name: colorText; */
+    animation: colorText 4s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes colorText {
+    0% {
+      color: black;
+    }
+    100% {
+      color: white;
+    }
+  }
+  

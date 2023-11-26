@@ -1,0 +1,71 @@
+#eee {
+    color: red;
+  }
+  
+  /* span {
+    color: red;
+    font-size: 16px;
+  }
+  h2 {
+    color: blue;
+    font-size: 18px;
+  }
+  Comment
+  p {
+    color: blue;
+  }
+  p.center {
+    text-align: center;
+    color: red;
+  }
+  p#contents {
+    color: #333;
+    font-style: italic;
+  }
+  [title] {
+    text-decoration: underline dotted;
+  }
+  h1,
+  h2,
+  h3 {
+    color: chartreuse;
+  }
+  article > p {
+    font-family: "Courier New", Courier, monospace;
+  }
+  article p {
+    font-size: 18px;
+  }
+  h2 + p {
+    font-weight: bold;
+  }
+  h2 ~ p {
+    font-style: italic;
+  } */
+  
+  
+  .aaa {
+    font-style: italic;
+  }
+  
+  #bbb {
+    text-align: center;
+  }
+  
+  [title] {
+    font-weight: bold;
+  }
+  
+  h1#bbb {
+    color: darkslategrey;
+  }
+  
+  p.aaa {
+    font-size: 18px;
+    text-decoration: green wavy underline;
+  }
+  
+  p[title] {
+    font-size: 17px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  }

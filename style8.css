@@ -1,0 +1,22 @@
+button {
+    background-color: darkorchid;
+    width: 4cm;
+    padding: 10px;
+  }
+  
+  button:active {
+    background-color: rgb(24, 13, 34);
+    color: wheat;
+    transform: scale(0.93);
+  }
+  
+  button:focus-visible {
+    color: red;
+  }
+  
+  input:focus {
+    border: 5px solid lightgreen;
+    outline: none;
+    color: green;
+  }
+  

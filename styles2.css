@@ -1,6 +1,79 @@
-#eee {
+a[href^="https"] {
+    color: coral;
+  }
+  
+img[src$=".png"] {
     color: red;
   }
+  
+img[alt*="logo"] {
+    color: blue;
+  }
+  
+div[class~="box1"] {
+    color: darkgoldenrod;
+  }
+  
+p[lang|="en"] {
+    /* "en-US" "en-GB" */
+    color: darkslategrey;
+  }
+  
+a[href^="https"][href$=".pdf"] {
+    color: greenyellow;
+  }
+  
+/* a[href] {
+    color: hotpink;
+    text-decoration:line-through;
+  } */
+  a[href^="mailto"] {
+    color:green;
+    font-weight: bold;
+  }
+  
+a[href$=".pdf"]{
+  color:red;
+  font-style: italic;
+}
+  
+a[target="_blank"] {
+  text-decoration: none;
+}
+
+a[href="#top"] {
+  color:black;
+  font-size: 20px;
+}
+
+
+  
+.aaa {
+    font-style: italic;
+  }
+  
+#bbb {
+    text-align: center;
+  }
+  
+[title] {
+    font-weight: bold;
+  }
+  
+h1#bbb {
+    color: darkslategrey;
+  }
+  
+p.aaa {
+    font-size: 18px;
+    text-decoration: green wavy underline;
+  }
+  
+p[title] {
+  font-size: 17px; 
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+  
   
   /* span {
     color: red;
@@ -42,30 +115,4 @@
   h2 ~ p {
     font-style: italic;
   } */
-  
-  
-  .aaa {
-    font-style: italic;
-  }
-  
-  #bbb {
-    text-align: center;
-  }
-  
-  [title] {
-    font-weight: bold;
-  }
-  
-  h1#bbb {
-    color: darkslategrey;
-  }
-  
-  p.aaa {
-    font-size: 18px;
-    text-decoration: green wavy underline;
-  }
-  
-  p[title] {
-    font-size: 17px;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-  }
+ 

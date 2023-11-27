@@ -1,0 +1,5 @@
+p[data-custom^="info"] {
+    border: 3px solid black;
+    color: blue;
+    padding-bottom: 15px;
+}

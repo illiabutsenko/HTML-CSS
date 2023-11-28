@@ -216,12 +216,52 @@ li:last-child:before {
 li:last-child::after {
   content: ".";
 }
-ul {
+/* ul {
   list-style-type: none;
   }
-  ul li:first-child {
+ul li:first-child {
   background-color: red;
-  }
-  ul li:last-child {
+}
+ul li:last-child {
   background-color: blue;
-  }
+} */
+
+li:nth-child(odd) {
+background-color: lightblue;
+}
+
+li:nth-child(even) {
+  background-color: grey;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+tr:nth-child(2) {
+  background-color: lightcoral;
+}
+
+tr:nth-child(3n) {
+  background-color: lightseagreen;
+}
+
+tr:nth-child(3n+1) {
+  background-color: lightgreen;
+}
+
+tr:nth-child(2n+1):not(:first-child) {
+  background-color: yellow;
+}
+tr:not(:first-child) {
+  background-color: gray;
+}
+
+ul li:nth-child(1) {
+  font-weight: bold;
+  color: blue;
+}
+
+div p:nth-child(3n) {
+  font-style: italic;
+  color: lightslategray;
+}

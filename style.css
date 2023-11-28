@@ -2,4 +2,390 @@ p[data-custom^="info"] {
     border: 3px solid black;
     color: blue;
     padding-bottom: 15px;
-}
+  }
+  
+  :root {
+    --main-color: #4caf60;
+    --secondary-color: green;
+  }
+  .ddd {
+    width: 100px;
+    background-color: var(--main-color);
+    color: white;
+  }
+  p {
+    --main-color: red;
+    --secondary-color: yellow;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    flex: 2;
+  }
+  
+  p {
+    font-style: italic;
+    font-style: oblique;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: normal; /*400*/
+    font-weight: bold; /*700*/
+    font-weight: lighter;
+    font-weight: bolder;
+    font-weight: 900;
+    font-size: 0.2cm;
+    font-size: 0.5in;
+    font-size: 18px;
+    font-size: 1em; /*16px*/
+    font-size: 1.2em;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-family: serif;
+    font-family: system-ui;
+    font-family: fantasy;
+    font-family: monospace;
+    font: inherit;
+    text-align: justify;
+    padding: 15px;
+  }
+  
+  p:hover {
+    color: blue;
+    font-style: italic;
+  }
+  
+  /* p {
+    font: italic small-caps bold 12px/30px Georgia serif;
+  } */
+  
+  body {
+    background-color: #94f5a7;
+    background-image: url("images/background.png");
+    /* background-repeat: no-repeat;
+    background-position: right top;
+    background-position: 50% 25%;
+    background-repeat: repeat-y; */
+    background-size: cover;
+    /* background: #4caf60 url("images/background.png") no-repeat right top / cover;
+    background: linear-gradient(lightblue, rgb(120, 21, 120)); */
+  }
+  
+  .box {
+    width: 30%;
+    float: left;
+    border-radius: 35px;
+    padding: 10px;
+    height: 900px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  h2 {
+    color: darkcyan;
+    font-family: cursive;
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: underline wavy;
+    text-decoration: underline dashed;
+    text-decoration: underline dotted;
+    text-decoration: underline double;
+    text-decoration: overline wavy;
+    text-decoration: line-through wavy;
+    text-decoration: underline red wavy 1.5px;
+    text-decoration: underline wavy;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    text-transform: none;
+  }
+  
+  h2:hover {
+    color: yellow;
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); */
+  }
+  
+  #div {
+    width: 200px;
+    height: 200px;
+    /* box-sizing: border-box; */
+  
+    /* margin-top: 50px;
+    margin-right: 40px;
+    margin-bottom: 75px;
+    margin-left: 80px; */
+    margin: 50px 40px 75px 80px;
+  
+    /* padding-top: 25px;
+    padding-right: 50px;
+    padding-left: 75px;
+    padding-bottom: 60px; */
+    padding: 25px 50px 75px 60px;
+  
+    /* border-width: 2px;
+    border-style: dashed;
+    border-color: red; */
+    /* border: 2px dashed black; */
+    border-top: 2px solid green;
+    border-bottom: 4px solid purple;
+    /* border-right: 6px dashed yellow; */
+    border-radius: 50px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 50px; */
+    margin: 20px;
+    padding: 25px;
+  
+    background: url(images/background.png);
+    background-size: cover;
+    /* position: static;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    position: fixed;
+    top: 10px;
+    left: 250px; */
+    position: sticky;
+    top: 50px;
+  }
+  /* button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    display: block;
+    font-size: 16px;
+    border-radius: 10px;
+  } */
+  
+  .button {
+    background-color: #4caf60;
+    color: white;
+    /* border: 1px solid black; */
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    font-family: cursive;
+    /* display: block;
+    display: inline; */
+    display: inline-block;
+    /* display: none;
+    display: flex;
+    display: grid; */
+    /* box-shadow: 15px 10px 15px 1px darkcyan inset, 15px 10px 15px 1px darkcyan,
+      15px -5px 15px 1px red, -5px -5px 15px 1px green; */
+    box-shadow:
+      15px 10px 15px 1px darkcyan inset,
+      15px 10px 15px 1px darkcyan;
+    transition:
+      color 2s linear 0s,
+      background-color 2s linear 0s,
+      box-shadow 1s,
+      transform 1s;
+  }
+  
+  .button:hover {
+    background-color: #4caf50;
+    text-decoration: underline;
+    background-color: blue;
+    color: rgb(0, 255, 106);
+    transform: scale(1.2);
+  }
+  
+  /* @media(max-width: 675px){ */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 90%;
+    float: left;
+    border-radius: 35px;
+    padding: 10px;
+    height: 900px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  @media (min-width: 675px) {
+    .container {
+      flex-direction: row;
+    }
+    .box {
+      width: 30%;
+    }
+  }
+  
+  @media (orientation: landscape) {
+    /*стилі для ландшафтного(landscape) режиму*/
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    /*стилі для темного режиму*/
+    body {
+      background-color: rgb(23, 22, 22);
+      color: white;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 600px and max-width: 900px) {
+    body {
+      font-size: 20px;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    body {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      font-size: 18px;
+      background-color: aquamarine;
+    }
+  }
+  
+  @media (max-width: 900px) and (min-width: 600px) {
+    body {
+      font-size: 20px;
+      background-color: mediumslateblue;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    body {
+      font-size: 22px;
+      background-color: darkcyan;
+    }
+  }
+  
+  .ball {
+    background-color: #4caf60;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: blue;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    border-radius: 30%;
+    transform: translate(50px, -20px);
+    transform: translateX(25px);
+    transform: translateY(-20px);
+    transform: translateZ(50px);
+    transform: scale(1.5, 1.5);
+    transform: scaleX(1.2);
+    transform: scaleY(1.2);
+    transform: rotate(45deg);
+    transform: /*skew(20deg, 20deg)*/ rotate(45deg) /* scale(1.5)*/;
+    transition: 1s;
+  }
+  
+  .ball:hover {
+    transform: rotate(-700deg);
+  }
+  
+  @keyframes animationName {
+    0% {
+      /*початкові стилі*/
+    }
+    50% {
+      /*середні стилі*/
+    }
+    100% {
+      /*кінцеві стилі*/
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  table {
+    animation-name: fadeIn;
+    animation-duration: 5s;
+  }
+  
+  .ball2 {
+    background-color: #2e0673;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-duration: 2s;
+    /* animation-iteration-count: infinite;
+    animation-direction: reverse; */
+    animation-fill-mode: forwards;
+    animation: colorChange 5s infinite;
+  }
+  
+  @keyframes bounce {
+    0%,
+    50%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background-color: red;
+    }
+    50% {
+      background-color: blue;
+    }
+    100% {
+      background-color: green;
+    }
+  }
+  

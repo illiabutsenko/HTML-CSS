@@ -116,3 +116,74 @@ p[title] {
     font-style: italic;
   } */
  
+  
+
+element:before{
+  content:"Текст до";
+}
+element:after{
+  content:"Текст після"
+}
+
+p{
+  font-style: italic;
+}
+
+p:before {
+  content: open-quote;
+  /* content:"“"; */
+  font-size: 3em;
+}
+
+p:after {
+  content: close-quote;
+  /* content:"“"; */
+  font-size: 3em;
+  position: absolute;
+  /* right: 0; */
+}
+
+button {
+  background-color:royalblue;
+  padding: 10px;
+  color: white;
+}
+
+/* button:before {
+  content: url(images/Angel3.png);
+  margin-right: 5px;
+} */
+
+button:before {
+  font-family: "Fontawesome";
+  content: "\f007";
+  margin-right: 10px;
+}
+
+a[href^="https://"]:after {
+  font-family: "Fontawesome";
+  margin-left: 5px;
+  content: "\f0c1";
+}
+
+a[href$=".pdf"]:after {
+  font-family: Fontawesome;
+  margin-left: 5px;
+  content: "\f1c1";
+}
+/* img[src$=".png"]:after {
+  font-family: "Fontawesome";
+  margin-left: 5px;
+  content: "\f779";
+} */
+a[href$=".pdf"]:after {
+  font-family: Fontawesome;
+  margin-left: 5px;
+  content: "\f1c1";
+}
+
+a[href$=".doc"]:before {
+  font-family: Fontawesome;
+  margin-right: 5px;
+  content: "\f1c2";
+}

@@ -129,19 +129,19 @@ p{
   font-style: italic;
 }
 
-p:before {
-  content: open-quote;
+/* p:before {
+  content: open-quote; */
   /* content:"“"; */
-  font-size: 3em;
-}
+  /* font-size: 3em;
+} */
 
-p:after {
-  content: close-quote;
+/* p:after {
+  content: close-quote; */
   /* content:"“"; */
-  font-size: 3em;
-  position: absolute;
+  /* font-size: 3em;
+  position: absolute; */
   /* right: 0; */
-}
+/* } */
 
 button {
   background-color:royalblue;
@@ -187,3 +187,41 @@ a[href$=".doc"]:before {
   margin-right: 5px;
   content: "\f1c2";
 }
+
+.container p:first-child {
+  font-style: normal !important;
+}
+.container p:last-child {
+  font-style: normal !important;
+}
+
+p:first-letter {
+  color: red;
+  font-size: 3em;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+}
+
+li:after {
+  content: ",";
+}
+
+li:last-child:before {
+  content: "and ";
+}
+
+li:last-child::after {
+  content: ".";
+}
+ul {
+  list-style-type: none;
+  }
+  ul li:first-child {
+  background-color: red;
+  }
+  ul li:last-child {
+  background-color: blue;
+  }

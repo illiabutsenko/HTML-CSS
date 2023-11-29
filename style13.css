@@ -1,0 +1,19 @@
+.ggg1 {
+    background-image: url("images/Illia3.jpg");
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    filter: drop-shadow(15px 15px 10px);
+}
+  
+.ggg2 {
+    -webkit-backdrop-filter: blur(5px) contrast(130%);
+    -moz-backdrop-filter: blur(5px) contrast(130%);
+    backdrop-filter: blur(5px) contrast(130%);
+     background-color: rgba(0, 50, 251, 0.1);
+    padding: 5px;
+    border-radius: 10px;
+}

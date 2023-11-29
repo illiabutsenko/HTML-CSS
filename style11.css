@@ -1,0 +1,20 @@
+:root {
+    --height-header: 130px;
+    --height-footer: 100px;
+}
+
+header, main, footer {
+    border: 2px solid blue;   
+}
+
+header {
+    height: var(--height-header);
+}
+
+footer {
+    height: var(--height-footer);
+}
+
+main {
+    height: calc(100vh - var(--height-header) - var(--height-footer)); 
+}

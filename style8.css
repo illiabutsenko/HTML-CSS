@@ -13,6 +13,13 @@ button {
   button:focus-visible {
     color: red;
   }
+
+  input {
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 20px;
+    width: calc((100% - 80px) / 2);
+  }
   
   input:focus {
     border: 5px solid lightgreen;

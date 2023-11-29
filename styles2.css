@@ -216,16 +216,6 @@ li:last-child:before {
 li:last-child::after {
   content: ".";
 }
-/* ul {
-  list-style-type: none;
-  }
-ul li:first-child {
-  background-color: red;
-}
-ul li:last-child {
-  background-color: blue;
-} */
-
 li:nth-child(odd) {
 background-color: lightblue;
 }
@@ -264,4 +254,9 @@ ul li:nth-child(1) {
 div p:nth-child(3n) {
   font-style: italic;
   color: lightslategray;
+}
+
+button {
+  width: calc(33.33% - 20px);
+  margin: 10px;
 }

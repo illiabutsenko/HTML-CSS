@@ -1,0 +1,47 @@
+#img {
+  width: 200px;
+  height: 200px;
+  margin: 50px 40px 75px 80px;
+  padding: 25px 50px 75px 60px;
+  border-top: 2px solid green;
+  border-bottom: 4px solid purple;
+  border-radius: 50px;
+  margin: 20px;
+  padding: 25px;
+  background: url(images/background.png);
+  background-size: cover;
+  position: sticky;
+  top: 50px;
+  /* filter: blur(5px); */
+  /* filter: brightness(130%); */
+  /* filter: contrast(130%); */
+  /* filter:grayscale(80%); */
+  /* filter: sepia(60%); */
+  /* filter: saturate(200%); */
+  /* filter: drop-shadow(30px 10px 4px #444444); */
+  /* filter: hue-rotate(90deg); */
+  /* filter: hue-rotate(-0.25turn); */
+  /* filter: invert(); */
+  /* filter: invert(0.3); */
+  /* filter: invert(70%); */
+  /* filter: opacity(0.5); */
+  /* filter: opacity(30%); */
+  /* filter: none; */
+  /* filter: contrast(111%) opacity(0.5); */
+  filter: drop-shadow(15px 15px 4px);
+  filter: saturate(0%);
+  transition: filter 0.5s;
+}
+
+#img:hover {
+  filter: drop-shadow(5px 5px 4px);
+}
+
+/* a[href$=".doc"] {
+  color: red;
+  filter: grayscale(100%);
+} */
+  /* Додавання відблиску до кнопки */
+  button {
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}

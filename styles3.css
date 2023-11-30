@@ -28,13 +28,49 @@
   /* filter: opacity(30%); */
   /* filter: none; */
   /* filter: contrast(111%) opacity(0.5); */
-  filter: drop-shadow(15px 15px 4px);
-  filter: saturate(0%);
-  transition: filter 0.5s;
+  /* filter: drop-shadow(15px 15px 4px); */
+  /* filter: saturate(110%); */
+  /* clip-path: circle(50% at 50% 50%); */
+  /* clip-path: ellipse(50% 25% at 50% 50%); */
+  /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+  transition: 1s;
 }
 
 #img:hover {
-  filter: drop-shadow(5px 5px 4px);
+  /* filter: saturate(0%); */
+  clip-path: polygon(49% 8%, 85% 40%, 65% 42%, 69% 83%, 40% 84%, 41% 41%, 24% 42%);
+  /* filter: drop-shadow(5px 5px 4px); */
+}
+
+.d2 {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  z-index: 1;
+  right: 30%;
+  clip-path: ellipse(50% 50% at 50% 50%);
+  transition: 1s;
+}
+
+.d2:hover {
+  clip-path: ellipse(50% 15% at 50% 80%);
+}
+
+.d1 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(0, 0, 180, 0.1);
+  clip-path: circle(50% at 50% 50%);
+  font-size: 30px;
+  font-style: italic;
+  color: darkcyan;
+  display: flex;
+  z-index: 0;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 30%;
 }
 
 /* a[href$=".doc"] {

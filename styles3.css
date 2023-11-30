@@ -148,3 +148,32 @@ li {
   border: solid black 2px;
   transform: translate(-50%, -50%);
 }
+
+
+.box {
+  width: 29%;
+  float: left;
+  border-radius: 35px;
+  padding: 10px;
+  height: 900px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  white-space: nowrap;
+  text-overflow: "...Read more...";
+  transition: 1s ease-out;
+}
+
+@media (min-width: 475px) {
+  .container {
+    flex-direction: row;
+  }
+  .box {
+    width: 29%;
+    height: 50px;
+  }
+}
+
+.box:hover {
+  white-space:unset;
+  height: 180px;
+}

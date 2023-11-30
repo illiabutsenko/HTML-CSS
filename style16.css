@@ -1,0 +1,15 @@
+.custom-overflow {
+  width: 70%;
+  height: 40px;
+  border: 1px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: "...Read more...";
+  background-color: rgb(129, 157, 129, 0.2);
+  transition: 1s ease-out;
+}
+
+.custom-overflow:hover {
+  white-space:unset;
+  height: 180px;
+}

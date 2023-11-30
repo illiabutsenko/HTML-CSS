@@ -1,0 +1,7 @@
+body {
+    user-select: none;
+}
+
+.selectable-text {
+    user-select: text;
+}

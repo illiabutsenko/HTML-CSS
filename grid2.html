@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            .container {
+                display: grid;
+                width: 80%;
+                height: 80%;
+                padding: 10px;
+                /* grid-template: 100px 1fr / [start]2fr[middle]1fr[end]; */
+                grid-template-areas:
+                "top        top         main"
+                "sidebar    sidebar     main";
+                /* grid-template-rows: auto 1fr auto;
+                gap: 10px; */
+                /* change from 1fr to 1fr 1fr */
+                /* grid-template-columns: 1fr 1fr; */
+                /* change from auto 1fr auto to auto repeat(2, 1fr) */
+                /* grid-template-rows: auto repeat(2, 1fr); */
+                /* align-content: stretch; */
+                /* justify-content: space-evenly; */
+                /* align-items: stretch; */
+                /* justify-items: start; */
+            }
+            header {
+                background-color: lightblue;
+                /* grid-column: start/end; */
+                grid-area: top;
+                /* add this line */
+                /* grid-column: span 2; */
+            }
+            main {
+                background-color: lightgreen;
+                grid-area: main;
+            }
+            aside {
+                background-color: lightpink;
+                grid-area: sidebar;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>My Website</h1>
+            </header>
+            <main>
+                <p>This is the main content of my website.</p>
+            </main>
+            <aside>
+                <p>This is the sidebar of my website.</p>
+            </aside>
+        </div>
+    </body>
+</html>
